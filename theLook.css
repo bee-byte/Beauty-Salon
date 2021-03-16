@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Antic&family=Dancing+Script&family=Raleway&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "Raleway", sans-serif;
+}
+
+.nav {
+  height: 70px;
+  width: 100%;
+  background-color: #cef1ea;
+  position: fixed;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #3a3a3a;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 15px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgb(22, 22, 22);
+}
+
+.logo {
+  margin-top: -4rem;
+}
+
+.a {
+  text-decoration: none;
+}
+.appointment-button {
+  padding: 10px;
+  background-color: #333;
+  text-decoration: none;
+  color: white;
+}
+@media (max-width: 600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: #cef1ea;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+/* hero section */
+
+.hero-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+}
+
+.hero-heading {
+  padding: 10rem;
+  text-align: left;
+  margin-top: 15rem;
+}
+
+.hero-heading h1 {
+  font-size: 3.5rem;
+  font-family: "Raleway", sans-serif;
+
+  font-weight: 500;
+}
+.hero-heading p {
+  font-size: 1.5rem;
+  font-family: "Antic", sans-serif;
+}
+
+.hero-image {
+  text-align: center;
+}
+
+/* intro */
+
+.intro {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #f4f9f9;
+  margin: 10rem;
+}
+
+.intro-content {
+  margin-top: 3rem;
+  line-height: 2rem;
+}
+
+.intro-content h1 {
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
+.intro-content p {
+  font-size: 1.5rem;
+  font-family: "Antic", sans-serif;
+}
+
+.intro-img {
+  height: 80%;
+  width: 60%;
+  object-fit: cover;
+  padding: 40px;
+  margin-top: 3rem;
+}
