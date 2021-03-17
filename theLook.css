@@ -61,6 +61,7 @@ body {
 .appointment-button {
   padding: 10px;
   background-color: #333;
+  border-color: #cef1ea;
   text-decoration: none;
   color: white;
 }
@@ -146,7 +147,6 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background-color: #f4f9f9;
-  margin: 10rem;
 }
 
 .intro-content {
@@ -165,9 +165,90 @@ body {
 }
 
 .intro-img {
-  height: 80%;
-  width: 60%;
+  height: 70%;
+  width: 70%;
   object-fit: cover;
   padding: 40px;
   margin-top: 3rem;
+}
+
+.btn {
+  padding: 20px;
+  background-color: #cef1ea;
+  border-color: #cef1ea;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border-color: #cef1ea;
+}
+
+/* Team Section */
+.team-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-image: url(https://i.postimg.cc/15dmxkgt/Experience-the-Best-Beauty-Services.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 10rem;
+  height: 50%;
+}
+
+.team-content {
+  padding: 20px;
+  margin-top: 15rem;
+}
+.team-content h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: inherit;
+  font-family: "Raleway", sans-serif;
+}
+
+.team-content p {
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+.team-image img {
+  width: 70%;
+  height: 60%;
+  object-fit: contain;
+  margin-top: 10rem;
+  text-align: center;
+}
+
+/* Specialize */
+.specialize {
+  padding: 0rem 4rem 0rem 4rem;
+}
+
+.specialize-heading {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.specialize-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: -8rem;
+  text-align: center;
+}
+
+.specialize-card img {
+  width: 20rem;
+  height: 50rem;
+  object-fit: contain;
+}
+
+.specialize-card p {
+  margin-top: -5rem;
+  text-align: center;
+  font-family: dancing script;
+  font-size: 30px;
+  color: #aaa;
 }
