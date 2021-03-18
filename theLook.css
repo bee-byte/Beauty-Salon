@@ -177,11 +177,8 @@ body {
   background-color: #cef1ea;
   border-color: #cef1ea;
   font-size: 15px;
-}
-
-.btn:hover {
-  background-color: transparent;
-  border-color: #cef1ea;
+  font-family: raleway, sans-serif;
+  letter-spacing: 3px;
 }
 
 /* Team Section */
@@ -251,4 +248,119 @@ body {
   font-family: dancing script;
   font-size: 30px;
   color: #aaa;
+}
+
+/* services */
+
+.services {
+  background-image: url(https://i.postimg.cc/DzmpwSYT/Experience-the-Best-Beauty-Services-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  line-height: 15rem;
+}
+
+.services-heading {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.service-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
+.service-icon img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.button-element {
+  text-align: center;
+}
+.services-button {
+  padding: 20px;
+  background-color: #cef1ea;
+  border: solid;
+  border-color: #cef1ea;
+  font-family: raleway, sans-serif;
+  letter-spacing: 5px;
+}
+
+#circle img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  background: #cef1ea;
+  border-radius: 50%;
+}
+
+/* contact form */
+
+.appointment {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.app-form {
+  padding: 50px;
+  margin-top: 70px;
+  height: 70%;
+}
+.app-image img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.app-heading {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.app-heading h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+.app-heading p {
+  color: #aaa;
+  text-align: center;
+}
+.form-format {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.col-sm-12 {
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.form-control {
+  width: 100%;
+  border-color: #3a3a3a;
+  padding: 15px;
+}
+
+.button {
+  padding: 5px;
+  width: 100%;
+  background-color: #cef1ea;
+  border: solid;
+  border-color: #cef1ea;
+  font-family: raleway, sans-serif;
+  letter-spacing: 5px;
+  margin-top: 10px;
+}
+
+.col-sm-12 input {
+  letter-spacing: 3px;
+  font-family: raleway, sans-serif;
 }
